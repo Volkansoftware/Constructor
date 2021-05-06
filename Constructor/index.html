@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*function Person(name,yearOfBirth,job){
+            this.name=name;
+            this.yearOfBirth=yearOfBirth;
+            this.job=job;
+            this.calculateAge=function(){
+                return 2021-this.yearOfBirth;
+            }
+        }*/
+        let Person=function(name,yearOfBirth,job){
+            this.name=name;
+            this.yearOfBirth=yearOfBirth;
+            this.job=job;
+            this.calculateAge=function(){
+                return 2021-this.yearOfBirth;
+            }
+        }
+        let yigit = new Person('yigit',2000,'student');
+        let emel = new Person('emel',1989,'teacher');
+        console.log(yigit.job);
+        console.log(emel.calculateAge());
+    </script>    
+</body>
+</html>
